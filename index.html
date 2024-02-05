@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body class="gradient-background">
+    <section id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary py-0">
+            <div class="container-fluid py-2">
+              <a class="navbar-brand" href="#">Charles Milton</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#school">Academics</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Links
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.linkedin.com/in/charles-milton-0b679427b/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                      </svg> Linkedin</a></li>
+                      <li><a class="dropdown-item" href="https://github.com/chuckmilton"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                      </svg> GitHub</a></li>
+                      <li><a class="dropdown-item" href="mailto:chuckmilton123@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                      </svg> Email</a></li>
+                    </ul>
+                </ul>
+              </div>
+            </div>
+          </nav>   
+    </section>
+    <section id="cover-page" class="text-center">
+      <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column px-5 justify-content-center align-items-center">
+        <div class="px-3">
+          <div class="header-container"><h1 class="text">Hello Everyone!</h1></div>
+          <p class="lead">After one month of learning web-development as a sophomore in college, I am excited to share what I have created so far!</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="about-me">
+      <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5 mt-2">
+              <div class="col-10 col-sm-8 col-lg-6 mb-3">
+                  <img src="./assets/images/soulmate.png" class="d-block mx-lg-auto img-fluid" alt="couple" width="700" height="500" loading="lazy">
+              </div>
+              <div class="slide-container col-lg-6">
+                  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                          <div class="about">
+                              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">About Me</h1>
+                              <p class="lead">Hello! My name is Charles Milton. I was born in Germantown, Tennessee and raised in Jacksonville, Florida. Growing up, my hobbies ranged from mixed martial arts, rock climbing, and calisthenics to playing the guitar, the piano, and video games.</p>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="about">
+                          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">What I Do</h1>
+                          <p class="lead">I am currently a Computer Science student at California State University, Long Beach. Although I enjoy getting my education here, I also enjoy going beyond what is taught in class. My main passions are machine learning/artificial intelligence, virtual reality, and of course, web development.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="about">
+                          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Why Web-Development?</h1>
+                          <p class="lead" data-animation="fadeInUp">Computer Science has always been a passion for me. Just like my other hobbies, Computer Science, especially web development, is an incredible way of expressing your art. I enjoy crafting websites that offer intuitive navigation, deliver valuable content seamlessly, and provide a visually engaging experience for the user.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>      
+              </div>   
+          </div>
+      </div>      
+  </section>
+
+
+  <section id="school" class="py-5">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img id="csulb-logo" src="./assets/images/csulb-logo.png" class="d-block mx-lg-auto img-fluid" alt="CSULB Logo" width="700" height="500" loading="lazy">  
+          </div>
+          <div class="col-lg-6">
+            <div class="about">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Education</h1>
+                <p class="lead">California State University, Long Beach</p>
+                <p class="lead">GPA: 3.45</p>
+                <p class="lead mb-2">Major: Computer Science</p>
+                <ul>
+                   <li class="small-text lead">Minor: Applied Mathematics</li> 
+                </ul>
+                
+            </div> 
+          </div> 
+          <div class="container marketing mt-0 px-4 py-5">
+            <!-- Three columns of text below the carousel -->
+            <div class="box row justify-content-center align-items-center g-5">
+                  <div class="container-dropdown pb-5">
+                      <div class="square mx-1">
+                          <div class="first-drop fw-bold section dropdown course">Math Courses
+                              <span class="left-icon"></span>
+                              <span class="right-icon"></span>
+                              <div class="courses lead">
+                                  <a style="--i:1"><span></span>Calculus 1</a>
+                                  <a style="--i:2"><span></span>Calculus 2</a>
+                                  <a style="--i:3"><span></span>Calculus 3</a>
+                                  <a style="--i:4"><span></span>Linear Algebra</a>
+                              </div>
+                          </div> 
+                      </div>
+                      <div class="square mx-1">
+                          <div class="second-drop fw-bold section dropdown course">CS Courses
+                              <span class="left-icon"></span>
+                              <span class="right-icon"></span>
+                              <div class="courses lead">
+                                  <a style="--i:1"><span></span>Introduction to Computer Science - Java</a>
+                                  <a style="--i:2"><span></span>Data Structures</a>
+                                  <a style="--i:3"><span></span>Object Oriented Application Development</a>
+                                  <a style="--i:4"><span></span>Discrete Structures with Computing Applications</a>
+                                  <a style="--i:5"><span></span>Digital Logic and Assembly</a>
+                              </div>
+                          </div> 
+                      </div>
+                  </div>
+                   
+            </div><!-- /.row -->
+          </div>
+        </div>  
+  </div>
+</section>
+
+<section id="clubs" class="pb-5 pt-2">
+  <div class="text-center container club-container col-xxl-8 px-5 pb-5">
+    <div class="row py-3 mt-5 about mb-5">
+    <div class="mx-auto pt-3">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 pb-1">Clubs</h1>
+      <p class="lead">Here are some clubs I joined at my university!</p>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 pb-5">
+    <div class="col mb-4">
+      <div class="card shadow-sm d-flex flex-column">
+        <img class="club-img" src="./assets/images/vroc-picture.jpg" height="225" width="100%" alt="virtual reality operations club"/>
+        <div class="card-body">
+          <p class="card-text lead">Virtual Reality Operations Club</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://linktr.ee/vroc.csulb"><button type="button" class="btn btn-sm btn-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">Joined September 2023</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card shadow-sm d-flex flex-column">
+        <img class="club-img" src="./assets/images/acm-pic.jpeg" height="225" width="100%" alt="association for computer machinery"/>
+        <div class="card-body">
+          <p class="card-text lead">Association for Computer Machinery</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="https://csulb.acm.org/"><button type="button" class="btn btn-sm btn-secondary">View</button></a>
+            </div>
+            <small class="text-body-secondary">Joined September 2023</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="skills">
+  <div class="container marketing mt-5 py-5">
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+      <svg height="140" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve"><path d="M58.492 5.872H5.508A4.513 4.513 0 0 0 1 10.38v43.24a4.513 4.513 0 0 0 4.508 4.508h52.984A4.513 4.513 0 0 0 63 53.62V10.38a4.513 4.513 0 0 0-4.508-4.508zm-52.984 2h52.984A2.51 2.51 0 0 1 61 10.38v6.889H3v-6.89a2.51 2.51 0 0 1 2.508-2.507zm52.984 48.256H5.508A2.51 2.51 0 0 1 3 53.62V19.27h58V53.62a2.51 2.51 0 0 1-2.508 2.508z"/><path d="M46.724 15.784a3.22 3.22 0 0 0 3.217-3.214c0-1.774-1.443-3.218-3.217-3.218s-3.218 1.444-3.218 3.218a3.22 3.22 0 0 0 3.218 3.214zm0-4.432c.671 0 1.217.546 1.217 1.218a1.218 1.218 0 0 1-2.435 0c0-.672.546-1.218 1.218-1.218zM37.929 15.784a3.22 3.22 0 0 0 3.217-3.214 3.221 3.221 0 0 0-3.217-3.218 3.221 3.221 0 0 0-3.218 3.218 3.22 3.22 0 0 0 3.218 3.214zm0-4.432c.671 0 1.217.546 1.217 1.218a1.218 1.218 0 0 1-2.435 0c0-.672.546-1.218 1.218-1.218zM55.519 15.784a3.22 3.22 0 0 0 3.217-3.214 3.221 3.221 0 0 0-3.217-3.218A3.221 3.221 0 0 0 52.3 12.57a3.22 3.22 0 0 0 3.218 3.214zm0-4.432A1.217 1.217 0 1 1 54.3 12.57c0-.672.546-1.218 1.218-1.218zM6.964 23.416a.999.999 0 0 0-.2 1.4l.011.013c.195.26.49.397.791.397a1.006 1.006 0 0 0 .798-1.61 1 1 0 0 0-1.4-.2zM7.275 31.492a1.006 1.006 0 0 0 .798-1.61 1 1 0 1 0-1.6 1.2l.01.014c.196.26.492.396.792.396zM6.484 37.386c.195.26.49.396.79.396a1.006 1.006 0 0 0 .798-1.61 1 1 0 0 0-1.598 1.2l.01.014zM6.484 43.922c.195.26.49.396.79.396a1.006 1.006 0 0 0 .798-1.61 1 1 0 1 0-1.598 1.2l.01.014zM6.77 48.477a1 1 0 0 0-.36 1.369l.01.017c.185.317.514.49.853.49.173 0 .349-.044.51-.138.476-.278.633-.9.354-1.377a1.003 1.003 0 0 0-1.368-.36zM44.062 44.34a1 1 0 0 0-1.407-.149l-3.042 2.46a.999.999 0 0 0 0 1.556l3.043 2.457a.996.996 0 0 0 1.406-.15 1 1 0 0 0-.15-1.407l-2.08-1.678 2.081-1.683a1 1 0 0 0 .149-1.406zM48.301 44.026a1 1 0 0 0-1.277.607l-1.752 4.917a1 1 0 0 0 1.884.672l1.752-4.917a1 1 0 0 0-.607-1.279zM51.51 44.191a1 1 0 1 0-1.258 1.555l2.08 1.683-2.079 1.678a1 1 0 0 0 1.257 1.557l3.042-2.457a1.001 1.001 0 0 0 0-1.555l-3.042-2.46zM13.769 37.78h13.756a1 1 0 1 0 0-2H13.77a1 1 0 1 0 0 2zM33.713 42.063H13.769a1 1 0 1 0 0 2h19.944a1 1 0 1 0 0-2zM25.164 48.342H13.77a1 1 0 1 0 0 2h11.395a1 1 0 1 0 0-2zM13.769 31.496h13.756a1 1 0 1 0 0-2H13.77a1 1 0 1 0 0 2zM13.769 25.216h13.756a1 1 0 1 0 0-2H13.77a1 1 0 1 0 0 2zM47.966 23.216H34.209a1 1 0 1 0 0 2h13.757a1 1 0 1 0 0-2zM47.966 35.78H34.209a1 1 0 1 0 0 2h13.757a1 1 0 1 0 0-2z"/></svg>        <h2 class="fw-normal">Front-End</h2>
+        <p>HTML-5, CSS, and JavaScript</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg height="140" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64" xml:space="preserve"><path d="M58.492 5.873H5.508A4.513 4.513 0 0 0 1 10.38v43.24a4.513 4.513 0 0 0 4.508 4.508h52.984A4.513 4.513 0 0 0 63 53.62V10.38a4.513 4.513 0 0 0-4.508-4.507zm-52.984 2h52.984A2.51 2.51 0 0 1 61 10.38v6.889H3V10.38a2.51 2.51 0 0 1 2.508-2.507zm52.984 48.255H5.508A2.51 2.51 0 0 1 3 53.62V19.27h58V53.62a2.51 2.51 0 0 1-2.508 2.508z"/><path d="M46.724 15.785a3.22 3.22 0 0 0 3.217-3.215 3.221 3.221 0 0 0-3.217-3.217 3.221 3.221 0 0 0-3.218 3.217 3.22 3.22 0 0 0 3.218 3.215zm0-4.432c.671 0 1.217.546 1.217 1.217a1.218 1.218 0 0 1-2.435 0c0-.671.546-1.217 1.218-1.217zM37.929 15.785a3.22 3.22 0 0 0 3.217-3.215 3.221 3.221 0 0 0-3.217-3.217 3.221 3.221 0 0 0-3.218 3.217 3.22 3.22 0 0 0 3.218 3.215zm0-4.432c.671 0 1.217.546 1.217 1.217a1.218 1.218 0 0 1-2.435 0c0-.671.546-1.217 1.218-1.217zM55.519 15.785a3.22 3.22 0 0 0 3.217-3.215 3.221 3.221 0 0 0-3.217-3.217A3.221 3.221 0 0 0 52.3 12.57a3.22 3.22 0 0 0 3.218 3.215zm0-4.432c.671 0 1.217.546 1.217 1.217a1.217 1.217 0 0 1-2.435 0c0-.671.546-1.217 1.218-1.217zM14.426 50.355c-.19 0-.399.008-.62.018-.553.026-1.478.065-1.737-.182-.093-.09-.107-.308-.107-.431v-9.497a.999.999 0 0 0-.383-.787l-2.27-1.78 2.27-1.779a.999.999 0 0 0 .383-.787v-9.497c0-.122.014-.34.107-.43.259-.248 1.186-.208 1.74-.184.22.01.429.02.617.02a1 1 0 0 0 0-2c-.162 0-.341-.01-.53-.018-.984-.04-2.333-.1-3.21.738-.48.46-.724 1.09-.724 1.874v9.01l-2.891 2.266a.999.999 0 0 0 0 1.574l2.891 2.267v9.01c0 .785.244 1.416.725 1.876.669.64 1.613.757 2.46.757.263 0 .515-.011.747-.022.19-.008.37-.017.532-.017a1 1 0 1 0 0-2zM19.366 43.494a.999.999 0 0 0-.2 1.4l.01.013c.196.26.492.397.792.397a1.006 1.006 0 0 0 .798-1.61.999.999 0 0 0-1.4-.2zM19.366 48.88a.999.999 0 0 0-.2 1.4l.01.014c.196.26.492.397.792.397a1.006 1.006 0 0 0 .798-1.61 1 1 0 0 0-1.4-.2zM19.335 29.084a.997.997 0 0 0 1.258-.647l1.752-5.455a1 1 0 1 0-1.904-.611l-1.752 5.455a1 1 0 0 0 .646 1.258z"/><path d="M49.12 38.908a1 1 0 0 0-1-1H15.887a1 1 0 1 0 0 2H48.12a1 1 0 0 0 1-1zM43.982 43.294H24.538a1 1 0 1 0 0 2h19.444a1 1 0 1 0 0-2zM37.826 48.68H24.538a1 1 0 1 0 0 2h13.288a1 1 0 1 0 0-2zM14.887 33.518a1 1 0 0 0 1 1H48.12a1 1 0 1 0 0-2H15.887a1 1 0 0 0-1 1zM24.538 29.131h13.757a1 1 0 0 0 0-2H24.538a1 1 0 0 0 0 2z"/><path d="M54.038 34.643v-9.01c0-.784-.244-1.414-.724-1.874-.876-.84-2.226-.779-3.212-.737-.19.008-.369.016-.531.016a1 1 0 0 0 0 2c.188 0 .398-.009.618-.018.556-.023 1.483-.064 1.742.184.093.089.107.307.107.429v9.497c0 .308.14.598.383.787l2.27 1.78-2.27 1.779a.999.999 0 0 0-.383.787v9.497c0 .123-.014.342-.107.43-.26.249-1.185.209-1.74.183-.22-.01-.43-.018-.62-.018a1 1 0 1 0 0 2c.162 0 .343.008.533.016.232.01.485.022.747.022.848 0 1.793-.117 2.463-.757.48-.46.724-1.091.724-1.876v-9.01l2.891-2.267a.999.999 0 0 0 0-1.574l-2.891-2.266z"/></svg>
+        <h2 class="fw-normal">Back-End</h2>
+        <p>Python, Java, C#, and C++</p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg id="library" height="140" data-name="1-Book" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M29 0H7a5 5 0 0 0-5 5v22a5 5 0 0 0 5 5h22a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm-1 30H7a3 3 0 0 1 0-6h18a3 3 0 0 1 2.82 2H11v2h17zm0-7a5 5 0 0 0-3-1H7a5 5 0 0 0-3 1V5a3 3 0 0 1 3-3h21z"/><path d="M7 26h2v2H7zM7 10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1zm2-3h14v2H9zM7 14h2v2H7zM11 14h2v2h-2zM17 14h8v2h-8z"/></svg>
+        <h2 class="fw-normal">Frameworks & Libraries</h2>
+        <p>Bootstrap, jQuery, Beautiful Soup, and NumPy</p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+    <h2 id="project-title" class="display-5 fw-bold text-body-emphasis lh-1">Projects</h2>
+  
+    <hr class="featurette-divider">
+
+    <div class="row featurette align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">CSULB Schedule Generator</h2>
+        <p class="lead">A personal Python project that is designed to streamline the process of creating a personalized course schedule for your academic semester.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/chuckmilton/CSULB-Schedule-Generator">Check it out! »</a></p>
+      </div>
+      <div class="col-md-5">
+        <video autoplay muted loop playsinline><source src="./assets/videos/schedule_generator.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette align-items-center">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Personal Portfolio</h2>
+        <p class="lead">After learning a bit of web development over winter break, I decided to create my own portfolio to showcase my skills, projects, and passion for coding.</p>
+        <p><a class="btn btn-secondary" href="https://github.com/chuckmilton/personal-portfolio">Check it out! »</a></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <video autoplay muted loop playsinline><source src="./assets/videos/portfolio.mp4" type="video/mp4"></video>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette align-items-center">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">VR Project</h2>
+        <p class="lead">I currently am working on a future VR/AR project with the Virtual Reality Operations Club. Our goal is to get it done by the end of the spring 2024 semester.</p>
+        <p><a class="btn disabled" href="#">In Progress</a></p>
+      </div>
+      <div class="col-md-5">
+        <img id="vr-pic" src="./assets/images/vr-pic.jpeg" />
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container px-4 py-5 text-center" id="featured-3">
+    <h2 class="pb-2">You can reach out to me via...</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-md-3">
+      <div class="feature col">
+        <a class="feature-btn" href="https://www.linkedin.com/in/charles-milton-0b679427b/">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+          </svg>
+        </div>
+      </a>
+        <h3 class="fs-2 text-body-emphasis">LinkedIn</h3>
+      </div>
+      <div class="feature col">
+        <a class="feature-btn" href="https://github.com/chuckmilton">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+        </div>
+      </a>
+        <h3 class="fs-2 text-body-emphasis">GitHub</h3>
+      </div>
+      <div class="feature col">
+        <a class="feature-btn" href="mailto:chuckmilton123@gmail.com">
+        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+          <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+          </svg>        
+        </div>
+      </a>
+        <h3 class="fs-2 text-body-emphasis">Email</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+   const dropdowns = document.querySelectorAll('.section');
+const clubContainer = document.getElementById('clubs');
+
+dropdowns.forEach(dropdown => {
+dropdown.addEventListener('click', () => {
+  dropdown.classList.toggle('active');
+
+  // Get an array of active dropdowns
+  const activeDropdowns = Array.from(dropdowns).filter(d => d.classList.contains('active'));
+
+  // Calculate the maximum height among active dropdowns
+  const maxHeight = activeDropdowns.reduce((max, d) => {
+    const dropdownHeight = d.scrollHeight; // Use scrollHeight to get the full height
+    return dropdownHeight > max ? dropdownHeight : max;
+  }, 0);
+
+  // Set the margin based on the maximum height
+  clubContainer.style.marginTop = `${maxHeight}px`;
+
+  // If no dropdown is active, reset the margin
+  if (activeDropdowns.length === 0) {
+    clubContainer.style.marginTop = '0';
+  }
+});
+}); 
+
+</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<!-- Your new simplified JavaScript -->
+  <script>
+    $(document).ready(function() {
+      var carouselControls = $(".carousel-control-prev, .carousel-control-next");
+
+      $("#carouselExampleDark").hover(
+        function() {
+          carouselControls.css("opacity", 0.5);
+          },
+        function() {
+          carouselControls.css("opacity", 0);
+          }
+      );
+  });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

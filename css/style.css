@@ -1,0 +1,380 @@
+.gradient-background {
+  background: linear-gradient(300deg, #5F6F52, #A9B388, #B99470);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.container-fluid {
+    background-color: #FEFAE0;
+    
+}
+
+.dropdown-menu {
+    background-color: #FEFAE0;
+}
+
+.navbar-brand {
+    font-family: 'Instrument Serif', serif;
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+.about {
+    background-color: #FEFAE0;
+    border-radius: 30px;
+    border: #5F6F52 solid 2px;
+    padding: 20px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#carouselExampleDark:hover .carousel-control-prev,
+#carouselExampleDark:hover .carousel-control-next {
+  opacity: 0.5;
+}
+
+
+
+.box > * {
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-secondary {
+    background-color: #FEFAE0 !important;
+    border: #5F6F52 solid 2px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    opacity: 1;
+    border: #5F6F52 solid 2px;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    color: black;
+}
+
+#courses > .dropdown-item:hover {
+    background-color: #FEFAE0;
+}
+
+.square {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    min-height: 60px;
+    background: #FEFAE0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: #5F6F52 solid 2px;
+    font-size: larger;
+    color: black;
+}
+
+.section .left-icon, .section .right-icon {
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 5px;
+    background: black;
+    border-radius: 40px;
+    top: 2px;
+    transition: .5s;
+}
+
+.section .left-icon {
+    transform: rotate(45deg);
+    left: 7px;
+}
+
+.dropdown.active .left-icon {
+    transform: rotate(135deg);
+
+}
+
+.section .right-icon {
+    transform: rotate(-45deg);
+}
+
+.dropdown.active .right-icon {
+    transform: rotate(-135deg);
+}
+
+
+@keyframes fade-in{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.section .courses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    margin-top: 63px;
+    overflow: hidden;
+    visibility: hidden;
+    cursor: default;
+}
+
+.dropdown.active .courses {
+    visibility: visible;
+    overflow: hidden;
+    height: 100;
+}
+
+.section .courses a {
+    position: relative;
+    left: 0;
+    display: flex;
+    background: #FEFAE0;
+    text-decoration: none;
+    border-radius: 10px;
+    border: #5F6F52 solid 2px;
+    padding: 10px 15px;
+    margin-top: 2.5px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    animation: fade-out .4s;
+    transition-delay: calc(-60ms * var(--i));
+    
+}
+
+.dropdown.active .courses a {
+    left:0;
+    transition: 1s;
+    animation: fade-in 1s;
+    transition-delay: calc(60ms * var(--i));
+    
+}
+
+.small-text {
+    font-size: medium;
+}
+
+#csulb-logo {
+    border-radius: 50%;
+}
+
+#csulb-logo {
+    -webkit-mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    mask-image: linear-gradient(45deg,#000 25%,rgba(0,0,0,.2) 50%,#000 75%);
+    -webkit-mask-size: 800%;
+    mask-size: 800%;
+    -webkit-mask-position: 0;
+    mask-position: 0;
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+}
+
+#csulb-logo:hover {
+    transition: mask-position 2s ease,-webkit-mask-position 2s ease;
+    -webkit-mask-position: 120%;
+    mask-position: 120%;
+    opacity: 1;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clubs {
+    overflow: hidden;
+    transition: margin-top .5s ease;
+  }
+
+.club-img {
+    border-top-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;
+    border-top-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card {
+    height: 100%;
+  }
+
+.club-img {
+    object-fit: cover;
+    height: 225px;
+  }
+  
+.card {
+    margin-bottom: 20px;
+    background-color: #FEFAE0;
+    border:#5F6F52 solid 2px;
+  }
+
+#cover-page {
+    height: 100vh;
+    width: 100%;
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+.p-3 {
+    padding: 1rem!important;
+}
+.mx-auto {
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+.flex-column {
+    flex-direction: column!important;
+}
+.h-100 {
+    height: 100%!important;
+}
+.w-100 {
+    width: 100%!important;
+}
+.d-flex {
+    display: flex!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+
+.word {
+    margin: auto;
+    color: white;
+    font: 700 normal 2.5em 'tahoma';
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
+
+.header-container {
+    display: inline-block;
+}
+
+.text {
+    border-right: 3px solid;
+    letter-spacing: 2px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    animation:
+    typing 1s steps(15),
+    cursor.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {border-color: transparent}
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+.card {
+    margin-bottom: 0;
+}
+
+.marketing {
+    text-align: center;
+}
+
+#library {
+    padding-top: 13px; 
+    padding-bottom: 13px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-icon {
+    height: 2em;
+    width: 2em;
+}
+
+.feature-icon {
+    background-color: transparent !important;
+    border: transparent solid 2px;
+    transition: 0.3s ease;
+    color:#000
+}
+
+.feature-icon:hover {
+    opacity: 1;
+    border: transparent solid 2px;
+    transform: scale(1.10);
+    transition: 0.3s ease;
+    color: #FEFAE0;
+}
+
+.course {
+    background-color: #FEFAE0 !important;
+    border: #5F6F52 solid 2px;
+    color: black;
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+.course:hover {
+    opacity: 1;
+    border: #5F6F52 solid 2px;
+    transform: scale(1.02);
+    transition: 0.3s ease;
+    color: black;
+}
+
+#vr-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+#project-title {
+     /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    margin-top: 10%;
+    text-align: left; /* Align the text to the left */
+}
