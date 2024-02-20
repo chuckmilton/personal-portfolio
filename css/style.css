@@ -16,10 +16,6 @@
   }
 }
 
-html, body {
-    overflow: visible;
-}
-
 .container-fluid {
     background-color: #FEFAE0; 
 }
@@ -380,4 +376,8 @@ video {
     margin-bottom: 20px; /* Add some bottom margin for spacing */
     margin-top: 10%;
     text-align: left; /* Align the text to the left */
+}
+
+overflow-item {
+  overflow-x: hidden;
 }
