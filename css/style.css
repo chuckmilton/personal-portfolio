@@ -17,14 +17,8 @@
 }
 
 html, body {
-    overflow-x: hidden;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -36,10 +30,6 @@ body {
     background-color: #FEFAE0;
 }
 
-.navbar {
-  z-index: 1000;
-  overflow: auto;
-}
 
 .navbar-brand {
     font-family: 'Instrument Serif', serif;
@@ -57,7 +47,6 @@ body {
 img {
     border-radius: 30px;
 }
-
 
 
 .carousel-control-prev,
