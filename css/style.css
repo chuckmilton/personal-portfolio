@@ -17,7 +17,11 @@
 }
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+overflow-item {
+  overflow-y: hidden;
 }
 
 .container-fluid {
