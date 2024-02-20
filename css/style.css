@@ -17,12 +17,11 @@
 }
 
 html {
-   overflow-x: hidden !important;
+    overflow-x: initial !important;
 }
 
 .container-fluid {
-    background-color: #FEFAE0;
-    
+    background-color: #FEFAE0; 
 }
 
 .dropdown-menu {
