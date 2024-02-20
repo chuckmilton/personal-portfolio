@@ -16,8 +16,8 @@
   }
 }
 
-body {
-  overflow-x: hidden;
+html {
+   overflow-x: hidden !important;
 }
 
 .container-fluid {
