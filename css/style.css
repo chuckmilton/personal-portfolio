@@ -16,8 +16,7 @@
   }
 }
 
-html {
-  max-width: 100%;
+body {
   overflow-x: hidden;
 }
 
@@ -30,6 +29,9 @@ html {
     background-color: #FEFAE0;
 }
 
+.navbar {
+  overflow-x: visible;
+}
 
 .navbar-brand {
     font-family: 'Instrument Serif', serif;
