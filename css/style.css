@@ -65,7 +65,12 @@ img {
   opacity: 0.5;
 }
 
-
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+    opacity: 0.3 !important;
+    }
+}
 
 .box > * {
     text-align: center;
