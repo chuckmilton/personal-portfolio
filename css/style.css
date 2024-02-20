@@ -16,12 +16,15 @@
   }
 }
 
+html, body {
+    overflow-x: hidden
+}
+
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden
 }
 
 .container-fluid {
@@ -31,6 +34,10 @@ body {
 
 .dropdown-menu {
     background-color: #FEFAE0;
+}
+
+.navbar {
+  z-index: 1000;
 }
 
 .navbar-brand {
