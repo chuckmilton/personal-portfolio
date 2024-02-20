@@ -16,7 +16,7 @@
   }
 }
 
-#cover-page, #about-me, #academics, #clubs, #skills, #contact {
+html, body {
   overflow-x: hidden;
 }
 
