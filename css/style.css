@@ -17,7 +17,7 @@
 }
 
 html, body {
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 body {
@@ -38,6 +38,7 @@ body {
 
 .navbar {
   z-index: 1000;
+  overflow: auto;
 }
 
 .navbar-brand {
