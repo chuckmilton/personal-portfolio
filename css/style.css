@@ -49,11 +49,6 @@ html, body {
     padding: 20px;
 }
 
-img {
-    border-radius: 30px;
-}
-
-
 .carousel-control-prev,
 .carousel-control-next {
   opacity: 0;
@@ -388,9 +383,18 @@ video {
     border-radius: 0;
 }
 
-#project-title {
+#project-title, #skills-title {
      /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add some bottom margin for spacing */
     margin-top: 10%;
     text-align: left; /* Align the text to the left */
 }
+
+.icon-hover-effect img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.icon-hover-effect img:hover {
+transform: scale(1.2);
+}
+  
