@@ -485,3 +485,13 @@ transform: scale(1.2);
 .footer-nav .nav-link {
     white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+    .footer-nav .nav-link {
+        font-size: small;
+    }
+    footer p {
+        font-size: smaller;
+    }
+}
+
