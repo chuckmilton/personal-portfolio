@@ -228,25 +228,13 @@ html, body {
     justify-content: space-between;
 }
 
-#clubs {
+#experience {
     overflow: hidden;
     transition: margin-top .5s ease;
   }
 
-.club-img {
-    border-top-right-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;
-    border-top-left-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));;;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
 .card {
     height: 100%;
-  }
-
-.club-img {
-    object-fit: cover;
-    height: 225px;
   }
   
 .card {
