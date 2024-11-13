@@ -481,3 +481,7 @@ transform: scale(1.2);
 .modal-content {
     background-color: #FEFAE0;
 }
+
+.footer-nav .nav-link {
+    white-space: nowrap;
+}
