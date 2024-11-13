@@ -379,31 +379,31 @@
   </div>
 </section>
 <script>
-   const dropdowns = document.querySelectorAll('.section');
-const clubContainer = document.getElementById('clubs');
+  const dropdowns = document.querySelectorAll('.section');
+  const clubContainer = document.getElementById('experience');
 
-dropdowns.forEach(dropdown => {
-dropdown.addEventListener('click', () => {
-  dropdown.classList.toggle('active');
+  dropdowns.forEach(dropdown => {
+  dropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
 
-  // Get an array of active dropdowns
-  const activeDropdowns = Array.from(dropdowns).filter(d => d.classList.contains('active'));
+    // Get an array of active dropdowns
+    const activeDropdowns = Array.from(dropdowns).filter(d => d.classList.contains('active'));
 
-  // Calculate the maximum height among active dropdowns
-  const maxHeight = activeDropdowns.reduce((max, d) => {
-    const dropdownHeight = d.scrollHeight; // Use scrollHeight to get the full height
-    return dropdownHeight > max ? dropdownHeight : max;
-  }, 0);
+    // Calculate the maximum height among active dropdowns
+    const maxHeight = activeDropdowns.reduce((max, d) => {
+      const dropdownHeight = d.scrollHeight; // Use scrollHeight to get the full height
+      return dropdownHeight > max ? dropdownHeight : max;
+    }, 0);
 
-  // Set the margin based on the maximum height
-  clubContainer.style.marginTop = `${maxHeight}px`;
+    // Set the margin based on the maximum height
+    clubContainer.style.marginTop = `${maxHeight}px`;
 
-  // If no dropdown is active, reset the margin
-  if (activeDropdowns.length === 0) {
-    clubContainer.style.marginTop = '0';
-  }
-});
-}); 
+    // If no dropdown is active, reset the margin
+    if (activeDropdowns.length === 0) {
+      clubContainer.style.marginTop = '0';
+    }
+  });
+  }); 
 
 </script>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
