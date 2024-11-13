@@ -383,7 +383,7 @@ video {
     border-radius: 0;
 }
 
-#project-title, #skills-title {
+#project-title, #skills-title, #experience-title {
      /* Adjust the font size as needed */
     margin-bottom: 20px; /* Add some bottom margin for spacing */
     margin-top: 10%;
@@ -398,3 +398,78 @@ video {
 transform: scale(1.2);
 }
   
+/* Experience Card Styling */
+.experience-card {
+    border: 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 350px; /* Set a fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.experience-date {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.9rem;
+  color: #6c757d; /* Muted color for subtlety */
+  font-weight: 500;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Logo and Title Container */
+.card-body > .d-flex {
+    align-items: center;
+    justify-content: flex-start; /* Ensures the logo is aligned left */
+    flex-shrink: 0;
+}
+
+.experience-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+/* Centered Title and Subtitle Styling */
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-muted {
+    font-size: 0.9em;
+}
+
+/* Organized Description Styling */
+.description {
+    list-style-type: none;
+    padding-left: 20px;
+    line-height: 1.6;
+    text-align: left;
+    margin-top: auto; /* Keeps description at the bottom */
+}
+
+/* Custom Bullet Style for Description Items */
+.description li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.description li::before {
+    content: "•";
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
